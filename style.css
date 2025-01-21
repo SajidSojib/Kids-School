@@ -213,7 +213,7 @@ nav a{
     }
     .logo p, 
     nav a,
-    .nav-btn{
+    .nav-btn,.slide{
         display: none;
     }
     .menubar{
@@ -229,18 +229,25 @@ nav a{
         padding: .8rem 0;
         border-top: 2px solid rgb(254, 163, 1);
     }
+
+    /* banner style */
     .banner{
         flex-direction: column-reverse;
         gap: 1rem;
     }
     .sec-info{
         text-align: center;
+        width: 100%;
     }
     .sec-title{
         margin: 1.5rem auto;
         font-size: 2rem;
     }
 
+    /* curriculum styles */
+    .cards{
+        flex-direction: column;
+    }
     
 }
 
