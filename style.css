@@ -11,8 +11,12 @@
 }
 
 /* shared style */
+.hide{
+    display: none;
+}
 .bg{
     background-image: url(assets/bg.png);
+    
 }
 .mwidth{
     width: 80.5%;
@@ -111,9 +115,6 @@ nav a{
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
-    main{
-        background-image: none;
-    }
 }
 .sec-description{
     font-size: 1.25rem;
@@ -136,7 +137,6 @@ nav a{
 
 /* standard curriculum style */
 .standard{
-    background-image: url(assets/bg.png);
     padding-top: 4.5rem;
 }
 .cards{
@@ -209,8 +209,9 @@ nav a{
 
 /* stories style */
 .story-section{
-    background-image: url(assets/bg.png);
-    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%)
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    margin-top: 7.5rem;
+    padding-bottom: 3.75rem;
 }
 .stories{
     display: grid;
@@ -240,14 +241,14 @@ nav a{
 }
 .date{
     border-radius: 3rem;
-    padding: 0.9rem 1.2rem;
+    padding: 0.8rem 1rem;
     position: relative;
     top: -9%;
     left: 13%;
     border: none;
     color: white;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 .toddler .date{
@@ -267,14 +268,16 @@ nav a{
 .d5{
     background-color: rgb(54, 116, 54);
 }
-
+#view{
+    text-align: center;
+}
 
 
 
 @media screen and (max-width: 576px) {
     /* header style */
     .mwidth{
-        width: 90%;
+        width: 92%;
     }
     nav{
         padding: .8rem 0;
@@ -317,5 +320,29 @@ nav a{
         flex-direction: column;
     }
     
+    /* stories style */
+    .toddler{
+        display: none;
+    }
+    .stories{
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        gap: 0.5rem;
+        row-gap: 20px;
+        width: 92%;
+    }
+    .hide{
+        display: block;
+    }
+    .story{
+        width: 100%;
+    }
+    .story-info{
+        padding: 0 3px 10px 10px;
+        font-size: 14px;
+    }
+    .date{
+        font-size: 13px;
+    }
 }
 
