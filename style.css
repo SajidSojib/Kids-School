@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+.font{
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* shared style */
+.mwidth{
+    width: 80.5%;
+    margin: 0 auto;
+}
+.c-orange{
+    color: rgb(254, 163, 1);
+    font-weight: 700;
+}
+.bg-orange{
+    background-color: rgb(254, 163, 1);
+}
+.btn-primary{
+    padding: 0.7rem 3.8rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+/* nav style */
+marquee{
+    background-color: skyblue;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo p{
+    font-size: 2rem;
+    font-weight: 700;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+nav li{
+    list-style: none;
+}
+nav a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+#home{
+    color: rgb(254, 163, 1);
+}
+#about{
+    color: rgb(1, 172, 253);
+}
+#facilities{
+    color: rgb(5, 212, 223);
+}
+#admission{
+    color: rgb(93, 88, 239);
+}
+.nav-btn{
+    padding: 0.7rem 3.8rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 0.75rem; 
+    cursor: pointer;
+    border: none;
+}
+.menubar{
+    display: none;
+}
+
+/* main style */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+.sec-description{
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+.sec-title{
+    font-size: 2.9rem;
+    font-weight: bold;
+    padding-bottom: 0;
+    margin: 7.625rem 0 1.5rem 0;
+}
+.banner img{
+    width: 100%;
+} 
+
+
+
+@media screen and (max-width: 576px) {
+    /* header style */
+    .mwidth{
+        width: 90%;
+    }
+    nav{
+        padding: .8rem 0;
+    }
+    .logo p, 
+    nav a,
+    .nav-btn{
+        display: none;
+    }
+    .menubar{
+        display: block;
+    }
+    .menubar i{
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    /* main style */
+    main{
+        padding: .8rem 0;
+        border-top: 2px solid rgb(254, 163, 1);
+    }
+    .banner{
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    .sec-info{
+        text-align: center;
+    }
+    .sec-title{
+        margin: 1.5rem auto;
+        font-size: 2rem;
+    }
+
+    
+}
+
