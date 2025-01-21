@@ -274,10 +274,36 @@ nav a{
 
 /* footer style */
 footer{
-    padding: 7.75rem auto;
+    border: 1px solid black;
+    background-color: rgb(87, 160, 189);
 }
 .footer{
     display: flex;
+    margin: 7.75rem auto;
+    justify-content: space-between;
+    gap: 9rem;
+    color: white;
+}
+.edu{
+    width: 33%;
+}
+.flogo{
+    display: flex;
+    margin-bottom: 2.24rem;
+}
+.fnav a{
+    text-decoration: none;
+    color: white;
+}
+.fnav li{
+    list-style: none;
+    margin-bottom: 0.4rem;
+}
+.fnav h2,.fsocial h2{
+    margin-bottom: 1.8rem;
+}
+.fsocial img{
+    cursor: pointer;
 }
 
 
