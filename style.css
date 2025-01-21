@@ -11,6 +11,9 @@
 }
 
 /* shared style */
+.bg{
+    background-image: url(assets/bg.png);
+}
 .mwidth{
     width: 80.5%;
     margin: 0 auto;
@@ -101,11 +104,16 @@ nav a{
 }
 
 /* main style */
+
+/* banner style */
 .banner{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
+    main{
+        background-image: none;
+    }
 }
 .sec-description{
     font-size: 1.25rem;
@@ -129,9 +137,7 @@ nav a{
 /* standard curriculum style */
 .standard{
     background-image: url(assets/bg.png);
-}
-.standard h1{
-    margin-top: 4.5rem;
+    padding-top: 4.5rem;
 }
 .cards{
     display: flex;
@@ -200,6 +206,68 @@ nav a{
     font-size: 1.5rem;
     cursor: pointer;
 }
+
+/* stories style */
+.story-section{
+    background-image: url(assets/bg.png);
+    background: linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%)
+}
+.stories{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.5rem;
+    margin: 5rem auto;
+}
+.toddler{
+    grid-row:span 2;
+    grid-column: span 2;
+}
+.story{
+    position: relative;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background-color: whitesmoke;
+    border-radius: 1rem;
+}
+.story-img img{
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+}
+.story-info{ 
+    padding: 0 2.5rem 2.2rem 2.5rem;
+}
+.toddler .story-info{
+    padding: 0 2.1rem 2rem;
+}
+.date{
+    border-radius: 3rem;
+    padding: 0.9rem 1.2rem;
+    position: relative;
+    top: -9%;
+    left: 13%;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.toddler .date{
+    top: -4.5%;
+    left: 13%;
+    background-color: #3CD8E8; 
+}
+.d2{
+    background-color: #95B226;
+}
+.d3{
+    background-color: #5D58F0;
+}
+.d4{
+    background-color: darkmagenta;
+}
+.d5{
+    background-color: rgb(54, 116, 54);
+}
+
 
 
 
