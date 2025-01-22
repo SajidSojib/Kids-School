@@ -442,6 +442,8 @@ footer{
         width: 100%;
     }
 }
+
+
 @media screen and (min-width: 577px) and (max-width: 992px) {
     /* nav style */
     .mwidth{
@@ -526,6 +528,10 @@ footer{
     }
 
     /* footer style */
+    .footer{
+        margin-top: 5rem;
+        margin-bottom: 5.5rem;
+    }
     .social{
         display: grid;
         grid-template-columns: repeat(1,1fr);
